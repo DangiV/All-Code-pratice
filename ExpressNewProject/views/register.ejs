@@ -1,0 +1,102 @@
+	
+	<!-- connecting header  -->
+
+	<%- include ('header.ejs') %>
+
+	<!-- connecting nav bar or menu bar  -->
+
+	<%- include ('nav.ejs') %>
+
+	<!-- connecting middle content   -->
+
+	<!-- <%- include ('banner.ejs') %> -->
+		
+		<div id="sidebar-bg">
+			<div id="sidebar">
+				<ul>
+					<li>
+						<h2>Register Here</h2>
+						<font color="blue"><%-output %></font>
+                        <form method="post" action="/register">
+							<table>
+								<tr>
+									<td>Name</td>
+									<td><input type="text" name="name" id="name" placeholder="Enter Name" ></td>
+								</tr>
+								<tr>
+									<td>Username</td>
+									<td><input type="text" name="username" id="username" placeholder="Enter Username" ></td>
+								</tr>
+								<tr>
+									<td>Password</td>
+									<td><input type="text" name="password" id="password" placeholder="Enter Password" ></td>
+								</tr>
+								<tr>
+									<td>Mobile</td>
+									<td><input type="text" name="mobile" id="mobile" placeholder="Enter number" ></td>
+								</tr>
+								<tr>
+									<td>Address</td>
+									<td><input type="text" name="address" id="address" placeholder="Enter Address" ></td>
+								</tr>
+								<tr>
+									<td>City</td>
+									<td><select class="" name="city" id="city">
+									<option>Select city</option>	
+									<option>Indore</option>	
+									<option>Bhopal</option>	
+									<option>Ujjain</option></td>>	
+								</select>
+								</tr>
+								<div>
+								<tr>
+									<td><label for="gender">Gender</label></td>
+									<td>Male <input type="radio" id="male" name="gender" value="male">
+									female <input type="radio" id="female" name="gender" value="female"></td>
+									
+								</tr>
+								<div>
+
+							</table>
+							<button style="color:green;">submit</button>								
+
+                        </form>
+					</li>
+					<li>
+						<h2>Quality Work</h2>
+						<ul>
+							<li><a href="#">Manage or un-manage stock</a></li>
+							<li><a href="#">Stock status</a></li>
+							<li><a href="#">Stock quantities</a></li>
+							<li><a href="#">Restock history</a></li>
+							<li><a href="#">Special and standard prices</a></li>
+						</ul>
+
+					</li>
+					<li>
+						<h2>Expert Worker</h2>
+						<ul>
+							<li><a href="#">Devising ways to optimize inventory control procedures</a></li>
+							<li><a href="#">Devise ways to optimize inventory control procedures</a></li>
+						</ul>
+					</li>
+					<li>
+						<h2>Office Contact</h2>
+						<ul>
+							<p>Phone number - XXX XXX XXXX</p>
+							<p>Address - Vijay nagar indore </p>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+
+
+	<!-- connecting footer  -->
+
+	<%- include ('footer.ejs') %>
+

@@ -1,0 +1,48 @@
+	
+	<!-- connecting header  -->
+
+	<%- include ('header.ejs') %>
+
+	<!-- connecting nav bar or menu bar  -->
+
+	<%- include ('adminnav.ejs') %>
+
+	<!-- connecting middle content   -->
+
+		<div id="sidebar-bg">
+			<div id="sidebar">
+				<ul>
+					<li>
+						<h2>Add Category here!!</h2>
+                        <font color="blue"><%- output%></font>
+
+                        <form method="post" action="/admin/addcategory" enctype="multipart/form-data">
+							<table>
+								<tr>
+									<td>Category Name</td>
+									<td><input type="text" name="catnm" id="catnm" placeholder="" ></td>
+								</tr>
+								<tr>
+									<td>Category Icon :</td>
+									<td><input type="file" name="caticon" id="caticon" placeholder="Enter Password" ></td>
+								</tr>
+								<div>
+								<div>
+
+							</table>
+							<button style="color:green;">Add Category</button>								
+
+                        </form>	
+					</li>	
+				</ul>
+			</div>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+
+
+	<!-- connecting footer  -->
+
+	<%- include ('adminfooter.ejs') %>

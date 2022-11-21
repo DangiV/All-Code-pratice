@@ -1,0 +1,10 @@
+
+> es6@1.0.0 dev
+> nodemon --exec babel-node  "app"
+
+[33m[nodemon] 2.0.16[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `babel-node app.js`[39m
+server invoked at link http://localhost:3000

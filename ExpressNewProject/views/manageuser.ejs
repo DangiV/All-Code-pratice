@@ -1,0 +1,73 @@
+	
+	<!-- connecting header  -->
+
+	<%- include ('header.ejs') %>
+
+	<!-- connecting nav bar or menu bar  -->
+
+	<%- include ('adminnav.ejs') %>	
+		<div>
+		<!-- <div id="sidebar-bg"> -->
+			<!-- <div id="sidebar"> -->
+				<ul>
+					<li><br>
+						<h2>manage user Page</h2><br>
+<h2>View & manage User Details</h2><br>
+<table style="border:1px solid black; background-color: black;" cellspacing="1" cellpadding="1" >
+	<tr style="background-color: blanchedalmond;">
+		<th>RegID</th>
+		<th>Name</th>
+		<th>username</th>
+		<th>Mobile</th>
+		<th>Address</th>
+		<th>City</th>
+		<th>Gender</th>
+		<th>Info</th>
+		<th>Status</th>
+		<th>Action</th>
+	</tr>
+	<% for (let row of userDetails) { %>
+		<tr style="background-color: blanchedalmond;">
+			<td><%- row._id %></td>
+			<td><%- row.name %></td>
+			<td><%- row.username %></td>
+			<td><%- row.mobile %></td>
+			<td><%- row.address %></td>
+			<td><%- row.city %></td>
+			<td><%- row.gender %></td>
+			<td><%- row.info %></td>
+			<td>
+				<% if(row.status) { %>
+					<a href="/admin/manageuserstatus?s=block&regid=<%- row._id %>" title="Block User">
+					<img src="../images/unverfied.png" height="100" width="100" />
+				    </a>
+					<% } else { %>
+						<a href="/admin/manageuserstatus?s=verify&regid=<%- row._id %>" title="Verify User">
+							<img src="../images/verify.png" height="100" width="100" />
+							</a>
+						<% } %>
+			</td>
+			<td>
+				<a href="/admin/manageuserstatus?s=delete&regid=<%- row._id %>" title="Block User">
+					<img src="../images/delete.png" height="100" width="100" />
+				</a>
+			</td>
+
+		</tr>
+
+		<% } %>
+</table>
+					</li>	
+				</ul>
+			</div>
+		<!-- </div> -->
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+
+
+	<!-- connecting footer  -->
+
+	<%- include ('adminfooter.ejs') %>
+

@@ -1,0 +1,78 @@
+ <div id="menu-wrapper">
+    <ul id="menu">
+
+        <li class="current_page_item"><a href="/admin"><span>admin home</span></a></li>
+         <li class="current_page_item"><a href="/admin/manageuser"><span>Manage user</span></a></li>
+         <li><a href="/login"><span>Logout</span></a></li>
+
+ <!--          <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">manage list <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <a href="#">action</a>
+
+                </ul>
+        
+            </li>-->
+           <style>
+            /* Style The Dropdown Button */
+            .dropbtn {
+              background-color: #4CAF50;
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+              cursor: pointer;
+            }
+            
+            /* The container <div> - needed to position the dropdown content */
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            
+            /* Dropdown Content (Hidden by Default) */
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: black;
+              min-width: 160px;
+        
+              z-index: 1;
+            }
+            
+            /* Links inside the dropdown */
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            /* Change color of dropdown links on hover */
+            .dropdown-content a:hover {background-color:green}
+            
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+            
+            /* Change the background color of the dropdown button when the dropdown content is shown */
+            .dropdown:hover .dropbtn {
+              background-color: #3e8e41;
+            }
+            </style>
+            
+            <div class="dropdown">
+              <button class="dropbtn">manage user</button>
+              <div class="dropdown-content">
+                <a href="/admin/addcategory">Add Category</a>
+                <a href="/admin/addsubcategory">Add SubCategory</a>
+            
+              </div>
+
+            </div
+            <b style="margin-left: 450px;">Welcome Admin: <%- sunm%></b>
+        </div>
+ 
+     
+<!-- end #menu -->

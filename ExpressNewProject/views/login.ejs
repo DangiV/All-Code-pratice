@@ -1,0 +1,51 @@
+	
+	<!-- connecting header  -->
+
+	<%- include ('header.ejs') %>
+
+	<!-- connecting nav bar or menu bar  -->
+
+	<%- include ('nav.ejs') %>
+
+	<!-- connecting middle content   -->
+
+	<%- include ('banner.ejs') %>
+
+
+	
+		
+		<div id="sidebar-bg">
+			<div id="sidebar">
+				<ul>
+					<li>
+						<h2>Login Page</h2>
+						<%-output%>
+						<form method="post" action="/login">
+							<table>
+								<tr>
+									<td>Username</td>
+									<td><input type="text" name="username" id="username" placeholder="Enter Username" ></td>
+								</tr>
+								<tr>
+									<td>Password</td>
+									<td><input type="text" name="password" id="password" placeholder="Enter Password" ></td>
+								</tr>
+								<div>
+								<div>
+
+							</table>
+							<button style="color:green;">login</button>								
+
+                        </form>	
+			</div>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+
+
+	<!-- connecting footer  -->
+
+	<%- include ('footer.ejs') %>
+
