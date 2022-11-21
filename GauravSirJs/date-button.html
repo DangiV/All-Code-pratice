@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>TODO supply a title</title>
+    <script>
+        function myFun()
+        {
+            var d = new Date();
+            document.getElementById("show").innerHTML=d.toLocaleString();
+        }
+        setInterval(myFun,1000);
+    </script>
+</head>
+<body>
+    <span id="show"></span>   
+    <button onclick="alert(Date())">Get Time</button>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Get Time</button>
+    
+    <p id="demo"></p>
+
+</body>
+</html>
